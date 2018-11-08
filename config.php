@@ -1,13 +1,13 @@
 <?php
 define('ROOT_PART', Root_part());
-define('APIKEY', 'AIzaSyCVkRcSiF0KmLCwmoo4edtw0vnSykCvFcc');
+define('APIKEY', 'AIzaSyA2tiPk017-VndAw1CZPeT-syf_dQyLJVU');
 define('GJ_CODE', 'US');
-define('SITE_NAME', 'y2b');
-define('TITLENAME', 'y2b');
-define('EN2DEKEY', '32123wwerwer323tgfdgds');
-define('EMAIL', '1334347212@qq.com');
+define('SITE_NAME', 'YTB10');
+define('TITLENAME', 'YTB By BZ');
+define('EN2DEKEY', 'ASlhcceuIYr3782cJSYC');
+define('EMAIL', 'jackbvs@gmail.com');
 define('NAME', 'admin');
-define('PASSWORD', 'admin');
+define('PASSWORD', 'CR400af&bf');
 define('LOGINHTML', '<!DOCTYPE html>
 <html lang="en">
 <head>
