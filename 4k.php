@@ -3,11 +3,11 @@ ini_set('display_errors', '0');
 //把下面的资料改成您的
 
 //网站名字
-$siteName='天天看视频';
+$siteName='YTB4K By BZ';
 
 //youtube API V3 KEY:
 
-$key='*******************************************';
+$key='AIzaSyA2tiPk017-VndAw1CZPeT-syf_dQyLJVU';
 
 
 //其他地方不用改。
@@ -173,7 +173,7 @@ switch (@$_SERVER['PATH_INFO']) {
     case '/watch':
        echo $header;
        echo '<div class="w3-container w3-center tj"><div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-yellow">
-    <p>不能观看请刷新,多试几次，若页面一直处于加载状态，可手动停止！</p>
+    <p>Please refresh if video cannot be played.</p>
   </div></div>';
        echo '<div class="w3-container w3-center bfq">
             <iframe width="100%" height="100%" src="../Proxy.php?https://www.youtube.com/embed/'.trim($_SERVER[QUERY_STRING]).'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -211,11 +211,11 @@ switch (@$_SERVER['PATH_INFO']) {
         echo $header;
          $q=urlencode($_GET['q']);
          echo '<div class="w3-container w3-center tj" style="min-height:600px;">
-         <h4><b class="w3-opacity">'.$_GET['q'].'</b> 搜索结果</h4>
+         <h4><b class="w3-opacity">'.$_GET['q'].'</b> Search Results</h4>
                <div id="load_data"></div>
                <div id="load_data_message"></div>
                <div id="ajax-load" style="display:none">
-                 <p><img src="../loader.gif">加载中....</p>
+                 <p><img src="../loader.gif">Loading...</p>
                </div>
         </div>';
        
@@ -239,7 +239,7 @@ echo '<script>
                  
                      action = \'active\';
                      $(\'#ajax-load\').hide();
-                    $(\'#load_data_message\').html(\'<div class="w3-panel w3-yellow"><h3>抱歉！</h3><p>没有找到相关视频</p></div>\');
+                    $(\'#load_data_message\').html(\'<div class="w3-panel w3-yellow"><h3>Sorry,</h3><p>no related video found.</p></div>\');
                 } else {
                     action = "inactive";
                     $(\'#ajax-load\').hide();
@@ -291,7 +291,7 @@ echo '<script>
             </div>
         </div>
         <div class="w3-container w3-center" style="background-color: #fff;margin-top: 10px;">
-        <h3>#时下流行#</h3>
+        <h3>#Trending#</h3>
             <div class="tj">';
             $home_data=get_trending($key,'25','','tw');
             
@@ -316,7 +316,7 @@ echo '<script>
         $(\'.searchTerm\').tw_input_placeholder({
             speed: 100,
             delay: 2000,
-            keywords: [\'想看点啥?\', \'您可以输入一个Youtube视频链接\', \'https://www.youtube.com/watch?v=3qrsX5PIUn4\', \'或者是输入一个关键词搜索\',
+            keywords: [\'What do you want to watch\', \'You can enter a YouTube link\', \'https://www.youtube.com/watch?v=3qrsX5PIUn4\', \'Or enter a keyword to search\',
                     \'Music\']
         });
         </script></div></div>';
